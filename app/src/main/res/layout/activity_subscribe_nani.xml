@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.userActivity.SubscribeNaniActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/app_bar_edit_profile"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/orange">
+
+        <ImageView
+            android:id="@+id/appbar_transparent_image1"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            android:src="@drawable/back_black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Nani Profile"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:id="@+id/title_app_bar_transparent"
+            android:gravity="center"
+            android:layout_toRightOf="@id/appbar_transparent_image1"
+            android:fontFamily="@font/open_sans"
+            android:layout_marginRight="?attr/actionBarSize" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/back_home_image"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_below="@+id/app_bar_edit_profile"
+        android:src="@drawable/orange_roatte_background" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/naniImage"
+        android:layout_below="@id/app_bar_edit_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_30"
+        android:src="@drawable/profile_blue_selected"
+        app:civ_border_width="@dimen/dp_1"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/dp_120" />
+
+    <TextView
+        android:id="@+id/naniName"
+        android:fontFamily="@font/open_sans"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_18"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_below="@id/naniImage"
+        android:layout_centerHorizontal="true"
+        android:text="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/spText"
+        android:textColor="@color/black"
+        android:fontFamily="@font/open_sans"
+        android:textStyle="bold"
+        android:padding="@dimen/dp_8"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_below="@id/naniName"
+        android:text="Specialities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_above="@id/submitButton"
+        android:layout_below="@id/spText"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_marginStart="@dimen/dp_40"
+        android:layout_marginEnd="@dimen/dp_40"
+        android:textColor="@color/white"
+        android:text="Subscribe"
+        android:textAllCaps="false"
+        android:background="@drawable/orange_solid_button"
+        android:layout_marginBottom="@dimen/dp_40"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

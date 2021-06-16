@@ -1,0 +1,120 @@
+<resources>
+    <array name="collection">
+        <item>-Select-</item>
+        <item>Today</item>
+        <item>Tomorrow</item>
+    </array>
+
+
+    <string name="facebook_app_id">2309146689324416</string>
+    <string name="fb_login_protocol_scheme">fb2309146689324416</string>
+
+
+    <string name="app_name">Nani</string>
+    <string name="map_key">AIzaSyDkOoHgsa0H3hvWWeS7npdR-084HzcF7tY</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="become_a_nani">Become a Nani or Find Your Nearest Nani</string>
+    <string name="lorem_ipsum_dolor">lorem ipsum dolor sit mat consectur adjustuiong elit, tempor bdjxjb hsvvv bbxbb jndjndsnkn njnnnnnzkzkxjkkzkzjkj</string>
+    <string name="pick_up_">Pick Up From Your Home or Delivery To Your Door</string>
+    <string name="list_or_choose_a_delicacy">List or Choose a Delicacy</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="or">OR</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="new_users">New Users ?</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_a_user">Already a User?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="enter">Enter..</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="account_number">Account Number</string>
+    <string name="account_holder_name">Account Holder Name</string>
+    <string name="branch_name">Branch Name</string>
+    <string name="branch_code">Branch Code</string>
+    <string name="phone_number_optional">Phone Number (Optional)</string>
+    <string name="next">next</string>
+    <string name="enter_bank_name">Enter Bank Name</string>
+    <string name="enter_account_number">Enter Account Number</string>
+    <string name="enter_account_holder_name">Enter Account Holder Name</string>
+    <string name="enter_branch_name">Enter Branch Name</string>
+    <string name="enter_branch_code">Enter Branch Code</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="nani_s_specialities">Nani\'s Specialities</string>
+    <string name="specialities">Specialities</string>
+    <string name="select_your_specialities">Select Your Specialities...</string>
+    <string name="homemade_biscuits">Homemade Biscuits</string>
+    <string name="a_verification_code">A Verification code has been sent to the</string>
+    <string name="phone_number_otp">phone number</string>
+    <string name="_91_99999_88888">+91 99999-88888</string>
+    <string name="please_enter_text_otp">Please enter the code below</string>
+    <string name="enter_the_verification_code">Enter the verification code</string>
+    <string name="verify">Verify</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="your_number_is_successfully_verified">Your Number is Successfully Verified</string>
+    <string name="home">Home</string>
+    <string name="discover">Discover</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+    <string name="ciptasmara">Ciptasmara</string>
+    <string name="at_starbucks">At Starbucks</string>
+    <string name="donuts">Donuts</string>
+    <string name="nice_good">Nice... Good</string>
+    <string name="collection_delivery">Collection/delivery :</string>
+    <string name="today">Today</string>
+    <string name="carry">Carry</string>
+    <string name="liked_your_rave">liked your Rave</string>
+    <string name="_5_months_ago">5 months ago</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="text">Text..</string>
+    <string name="list_of_ingredients">List of Ingredients</string>
+    <string name="source_of_meat_products">Source of Meat Products</string>
+    <string name="preparation">Preparation Instructions</string>
+    <string name="post">Post</string>
+    <string name="upkar_singh">Upkar Singh</string>
+    <string name="edit_account"><u>Edit Account</u></string>
+    <string name="please_signin">Please Sign In or Sign Up to Continue</string>
+    <string name="signin">SignIn</string>
+    <string name="my_posts">My Posts :</string>
+    <string name="who_are_you">Who are you?</string>
+    <string name="nani">Nani</string>
+    <string name="buyer">Buyer</string>
+    <string name="next2">Next</string>
+    <string name="info_omninos_com">info@omninos.com</string>
+    <string name="saved_places">Saved Places</string>
+    <string name="log_out">Log Out</string>
+    <string name="general_issues">General Issues</string>
+    <string name="legal_terms_amp_conditions"><![CDATA[Legal, Terms & Conditions]]></string>
+    <string name="faqs">FAQs</string>
+    <string name="amandeep_mall">Amandeep Mall</string>
+    <string name="my_orders">My Orders</string>
+    <string name="payment">Payment</string>
+    <string name="_43_sector_chandigarh">43 Sector, Chandigarh</string>
+    <string name="hiden">**********</string>
+    <string name="save">Save</string>
+    <string name="set_delivery_address">Set Delivery Address</string>
+    <string name="location">Location</string>
+    <string name="area_code">Area Code</string>
+    <string name="_160055">160055</string>
+    <string name="confirming_order">Confirming Your Order With Nani</string>
+    <string name="food_is_being_prepared">Your Order Is Being Prepared</string>
+    <string name="courier_is_on_the_way">Courier Is On It\'s Way</string>
+    <string name="food_delivered">Order Delivered. Enjoy!</string>
+    <string name="cart">Cart</string>
+    <string name="nani_s_special">Nani\'s Special</string>
+    <string name="spring_roll">Spring Roll</string>
+    <string name="_15_00">$15.00</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="delivery_charges">Delivery Charges</string>
+    <string name="proceed_to_pay">Proceed To Pay</string>
+    <string name="contains_meat_products">Contains Meat Products</string>
+    <string name="allergies">Allergies</string>
+    <string name="oneFragment">Nani(/Naa:nee/) ~ Anybody who has that extra special touch in making something delicious, from the comfort of their own kitchen for people to enjoy.</string>
+    <string name="seconFragmnet">List your speciality product, or Choose from a wide range of food and delicacies which are available in your Area.</string>
+
+
+    <string name="thirdFragment">Collection and Delivery arranged from or to your doorstep,either today or tomorrow,depending on the availability of the specialty product.</string>
+</resources>

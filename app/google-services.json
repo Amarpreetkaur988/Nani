@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "265761587712",
+    "firebase_url": "https://nani-acd89.firebaseio.com",
+    "project_id": "nani-acd89",
+    "storage_bucket": "nani-acd89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265761587712:android:87a2b2031b14057a518ee5",
+        "android_client_info": {
+          "package_name": "com.omninos.nani"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265761587712-mjuvg7id41838q7c4u5ctcdpk15co2pr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_e0MIliHCtXv4mu8VQqnH4Y5nReNUgME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265761587712-mjuvg7id41838q7c4u5ctcdpk15co2pr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

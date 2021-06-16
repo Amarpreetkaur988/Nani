@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.omninos.nani">
+
+    <application
+        android:name=".utils.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".activity.naniActivity.NaniForgotActivity"></activity>
+        <activity android:name=".activity.userActivity.BuyerForgotActivity" />
+        <activity android:name=".activity.naniActivity.UpdateReferenceActivity" />
+        <activity android:name=".activity.naniActivity.UpdateBankDetailActivity" />
+        <activity
+            android:name=".activity.DeeplinkActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="naniapplication.com"
+                    android:scheme="https" />
+                <data
+                    android:host="naniapplication.com"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ProductInfoActivity" />
+        <activity android:name=".activity.naniActivity.NotifiedActivity" />
+        <activity
+            android:name=".activity.userActivity.BuyerDiscoverItemDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.userActivity.OrderDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.userActivity.BuyerEditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.userActivity.PayfastActivity"
+            android:screenOrientation="portrait">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".activity.userActivity.BuyerOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.userActivity.ChooseAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.userActivity.BuyerItemDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.userActivity.SubscribeNaniActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.naniActivity.NaniPaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FAQActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TermAndConditionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.naniActivity.NaniEditProfile"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.naniActivity.ItemDescriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.naniActivity.ReferencesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.naniActivity.SpecialitiesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.naniActivity.BankDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SearchPlaceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NoInternetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.userActivity.BuyerHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.naniActivity.NaniHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.userActivity.BuyerOtpVerification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.naniActivity.NaniOtpVerification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.userActivity.BuyerRegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.naniActivity.NaniRegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.userActivity.BuyerLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.naniActivity.NaniLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.StartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service android:name=".services.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".services.MyService" />
+    </application>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+</manifest>

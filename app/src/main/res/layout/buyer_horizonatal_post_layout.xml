@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="10dp"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/vertical_feed_card_item">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/top_layout_vertical_feed_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/dp_vertical_feed_item"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:src="@drawable/profile_selected"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:id="@+id/name__vertical_feed_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/dp_vertical_feed_item"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/ciptasmara"
+                android:textColor="#000"
+                android:textSize="@dimen/sp_12"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/dp_vertical_feed_item" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name__vertical_feed_item"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/dp_vertical_feed_item"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/dp_vertical_feed_item">
+
+                <TextView
+                    android:id="@+id/address"
+                    android:drawableStart="@drawable/placeholder1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/at_starbucks"
+                    android:textSize="@dimen/sp_10"
+                    android:layout_marginStart="3dp"
+                    android:drawableLeft="@drawable/placeholder1" />
+
+
+            </RelativeLayout>
+
+            <RatingBar
+                android:id="@+id/rating_bar_vertical_feed_item"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:isIndicator="true"
+                android:progressTint="@color/orange"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/food_image_vertical_feed_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80"
+            android:layout_below="@+id/top_layout_vertical_feed_item"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/food_image_horizontal_feed_recycler"
+            app:riv_corner_radius="8dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/bottom_layout_vertical_feed_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/food_image_vertical_feed_item"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/donuts_text_vertical_feed_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/donuts"
+                android:textColor="#000"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nice_good_vertical_feed_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/donuts_text_vertical_feed_item"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="@dimen/dp_30"
+                android:maxLines="1"
+                android:layout_toStartOf="@id/today_text_vertical_feed_item"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/nice_good"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/today_text_vertical_feed_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/open_sans"
+                android:text="R 300"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/buyer_drawer"
+    android:layout_height="match_parent"
+    tools:context=".activity.userActivity.BuyerHomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/app_bar_large_text"
+            android:id="@+id/app_bar_home_buyer" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:scaleType="fitXY"
+            android:layout_below="@+id/app_bar_home_buyer"
+            android:src="@drawable/orange_roatte_background"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginTop="-10dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/frame_home_buyer_activity"
+            android:layout_below="@+id/app_bar_home_buyer"
+            android:layout_above="@+id/bottom_navigation_home_buyer_activity">
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentBottom="true"
+            android:weightSum="4"
+            android:id="@+id/bottom_navigation_home_buyer_activity"
+            android:background="@color/white">
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/home_navigator_buyer"
+                android:background="#E3EFF2">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#fd6038"
+                    android:id="@+id/home_bottom_view_buyer" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:src="@drawable/home_selected"
+                        android:id="@+id/home_img_buyer"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home"
+                        android:textColor="#fd6038"
+                        android:fontFamily="@font/open_sans"
+                        android:layout_below="@+id/home_img_buyer"
+                        android:id="@+id/home_text_home_buyer" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/discover_navigator_buyer">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#fd6038"
+                    android:id="@+id/discover_bottom_view_buyer"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/discover_img_buyer"
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/discover_unselected" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/discover"
+                        android:fontFamily="@font/open_sans"
+                        android:textColor="#AFBFD8"
+                        android:layout_below="@+id/discover_img_buyer"
+                        android:id="@+id/discover_text_home_buyer" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/profile_navigator_buyer">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#fd6038"
+                    android:id="@+id/profile_bottom_view_buyer"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:src="@drawable/profile_unselected"
+                        android:id="@+id/profile_img_buyer"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile"
+                        android:fontFamily="@font/open_sans"
+                        android:textColor="#AFBFD8"
+                        android:layout_below="@+id/profile_img_buyer"
+                        android:id="@+id/profile_text_home_buyer" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/setting_navigator_buyer">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#fd6038"
+                    android:id="@+id/setting_bottom_view_buyer"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:src="@drawable/setting_unselected"
+                        android:id="@+id/setting_img_buyer"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings"
+                        android:fontFamily="@font/open_sans"
+                        android:textColor="#AFBFD8"
+                        android:layout_below="@+id/setting_img_buyer"
+                        android:id="@+id/setting_text_home_buyer" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/buyer_side_menu" />
+</androidx.drawerlayout.widget.DrawerLayout>

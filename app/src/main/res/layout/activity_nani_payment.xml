@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.naniActivity.NaniPaymentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/app_bar_edit_profile"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue">
+
+        <ImageView
+            android:id="@+id/appbar_transparent_image1"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            android:src="@drawable/back_black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Payment"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:id="@+id/title_app_bar_transparent"
+            android:gravity="center"
+            android:layout_toRightOf="@id/appbar_transparent_image1"
+            android:fontFamily="@font/open_sans"
+            android:layout_marginRight="?attr/actionBarSize" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/totalPayment"
+        android:layout_below="@id/app_bar_edit_profile"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/dp_8"
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/black"
+        android:fontFamily="@font/open_sans"
+        android:textStyle="bold"
+        android:text="R 0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/totalPaymenttext"
+        android:layout_below="@id/totalPayment"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/dp_4"
+        android:textColor="@color/black"
+        android:fontFamily="@font/open_sans"
+        android:text="Total Payments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/data"
+        android:layout_below="@id/totalPaymenttext"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/dp_4"
+        android:textColor="@color/black"
+        android:fontFamily="@font/open_sans"
+        android:text="History"
+        android:textStyle="bold"
+        android:background="@color/text_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@id/data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

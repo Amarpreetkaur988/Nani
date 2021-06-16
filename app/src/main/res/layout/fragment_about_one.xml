@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.AboutOneFragment">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/icon_frag_one"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/become_a_nani_frag_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon_frag_one"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="50dp"
+        android:fontFamily="@font/open_sans"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/become_a_nani"
+        android:textColor="#000"
+        android:textSize="22sp"
+        app:fontFamily="@font/open_sans" />
+
+    <TextView
+        android:id="@+id/lorem_ipsum_dolor_frag_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/become_a_nani_frag_one"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:fontFamily="@font/open_sans"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="@string/oneFragment" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

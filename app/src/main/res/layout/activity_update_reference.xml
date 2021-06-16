@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.naniActivity.UpdateReferenceActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/appBar"
+        android:background="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="References"
+            android:textAlignment="center"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="@font/open_sans"
+            android:textSize="@dimen/sp_18"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/refetence_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:text="Nani Reference #1"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/open_sans"
+                android:textSize="@dimen/sp_18"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/open_sans"
+                android:text="Reference Name"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/referenceOneName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:layout_marginTop="5dp"
+                android:inputType="text"
+                android:background="@drawable/bank_details_et_back"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center_vertical"
+                android:hint="Reference name"
+                android:paddingLeft="20dp"
+                android:textColor="#000"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/open_sans"
+                android:text="Reference Contact Number"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/referenceOneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:layout_marginTop="5dp"
+                android:inputType="number"
+                android:background="@drawable/bank_details_et_back"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center_vertical"
+                android:hint="Reference Number"
+                android:paddingLeft="20dp"
+                android:textColor="#000"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/open_sans"
+                android:text="Item Tested By Reference"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/referenceOneTest"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:layout_marginTop="5dp"
+                android:inputType="text"
+                android:background="@drawable/bank_details_et_back"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center_vertical"
+                android:hint="Items"
+                android:paddingLeft="20dp"
+                android:textColor="#000"
+                android:textSize="@dimen/sp_14" />
+
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_30"
+                android:text="Nani Reference #2"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/open_sans"
+                android:textSize="@dimen/sp_18"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/open_sans"
+                android:text="Reference Name"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/referenceTwoName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:layout_marginTop="5dp"
+                android:inputType="text"
+                android:background="@drawable/bank_details_et_back"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center_vertical"
+                android:hint="Reference name"
+                android:paddingLeft="20dp"
+                android:textColor="#000"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/open_sans"
+                android:text="Reference Contact Number"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/referenceTwoNumber"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:layout_marginTop="5dp"
+                android:inputType="number"
+                android:background="@drawable/bank_details_et_back"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center_vertical"
+                android:hint="Reference Number"
+                android:paddingLeft="20dp"
+                android:textColor="#000"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/open_sans"
+                android:text="Item Tested By Reference"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/referenceTwoTest"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:layout_marginTop="5dp"
+                android:inputType="text"
+                android:background="@drawable/bank_details_et_back"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center_vertical"
+                android:hint="Items"
+                android:paddingLeft="20dp"
+                android:textColor="#000"
+                android:textSize="@dimen/sp_14" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:layout_marginStart="@dimen/dp_40"
+                android:layout_marginEnd="@dimen/dp_40"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:backgroundTint="@color/blue"
+                android:background="@drawable/orange_solid_button"
+                android:fontFamily="@font/open_sans"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:id="@+id/submit" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.naniActivity.BankDetailsActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/logo_bank_details"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/logo_splash" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Nani's Bank Account"
+                android:textSize="30sp"
+                android:textColor="#000"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/logo_bank_details"
+                android:id="@+id/nani_bank_details"
+                android:layout_marginTop="15dp"
+
+                />
+
+
+            <LinearLayout
+                android:id="@+id/bank_name_bank_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical"
+                android:layout_below="@+id/nani_bank_details">
+
+                <TextView
+                    android:id="@+id/bank_name_text_bank_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/bank_name"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/bankNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_45"
+                    android:layout_marginTop="5dp"
+                    android:inputType="text"
+                    android:background="@drawable/bank_details_et_back"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center_vertical"
+                    android:hint="@string/enter_bank_name"
+                    android:paddingLeft="20dp"
+                    android:textColor="#000"
+                    android:textSize="@dimen/sp_14" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/account_number_bank_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bank_name_bank_details"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/account_number_text_bank_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/account_number"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/accountNumberEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_45"
+                    android:layout_marginTop="5dp"
+                    android:inputType="number"
+                    android:background="@drawable/bank_details_et_back"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center_vertical"
+                    android:hint="@string/enter_account_number"
+                    android:paddingLeft="20dp"
+                    android:textColor="#000"
+                    android:textSize="@dimen/sp_14" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/account_holder_name_bank_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/account_number_bank_details"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/account_holder_name_text_bank_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/account_holder_name"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/accountHolderEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_45"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bank_details_et_back"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:hint="@string/enter_account_holder_name"
+                    android:paddingLeft="20dp"
+                    android:textColor="#000"
+                    android:textSize="@dimen/sp_14" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/branch_name_bank_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/account_holder_name_bank_details"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/branch_name_text_bank_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/branch_name"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/branchNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_45"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bank_details_et_back"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:hint="@string/enter_branch_name"
+                    android:paddingLeft="20dp"
+                    android:textColor="#000"
+                    android:textSize="@dimen/sp_14" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/branch_code_bank_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/branch_name_bank_details"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/branch_code_text_bank_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/branch_code"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/branchCodeEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_45"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bank_details_et_back"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center_vertical"
+                    android:hint="@string/enter_branch_code"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:textColor="#000"
+                    android:textSize="@dimen/sp_14" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/phone_number_bank_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/branch_code_bank_details"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/phone_number_text_bank_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/phone_number_optional"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/phoneNumberEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_45"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bank_details_et_back"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center_vertical"
+                    android:hint="@string/enter_mobile_number"
+                    android:inputType="phone"
+                    android:paddingLeft="20dp"
+                    android:textColor="#000"
+                    android:textSize="@dimen/sp_14" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:layout_below="@+id/phone_number_bank_details"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/blue"
+                android:background="@drawable/orange_solid_button"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/next"
+                android:textColor="@color/white"
+                android:id="@+id/next_button_bank_details" />
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

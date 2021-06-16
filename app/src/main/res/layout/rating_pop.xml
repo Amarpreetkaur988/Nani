@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    app:cardCornerRadius="@dimen/dp_8"
+    app:cardElevation="@dimen/dp_8">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imageData"
+            android:layout_width="match_parent"
+            app:riv_corner_radius="@dimen/dp_8"
+            android:layout_margin="@dimen/dp_30"
+            android:layout_height="@dimen/dp_150"/>
+
+        <TextView
+            android:layout_below="@id/imageData"
+            android:layout_centerHorizontal="true"
+            android:text="Data"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold"
+            android:padding="@dimen/dp_8"
+            android:id="@+id/dishName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RatingBar
+            android:layout_marginBottom="@dimen/dp_8"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/ratingData"
+            android:layout_marginStart="@dimen/dp_40"
+            android:layout_marginEnd="@dimen/dp_40"
+            android:layout_below="@id/dishName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_marginStart="@dimen/dp_40"
+            android:layout_marginEnd="@dimen/dp_40"
+            android:background="@drawable/orange_solid_button"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:layout_below="@id/ratingData"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

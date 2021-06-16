@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.userActivity.BuyerDiscoverItemDetails">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/background_items" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <include
+            android:id="@+id/trans_bar"
+            layout="@layout/app_bar_transparent" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/item_desc_images_recycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/item_desc_images_recycler"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:text="Name"
+                            android:textColor="#000000"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/name"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:text="Address"
+                            android:drawablePadding="@dimen/dp_4"
+                            android:drawableStart="@drawable/placeholder1"
+                            android:textColor="#000000"
+                            android:textSize="12dp" />
+
+
+                        <TextView
+                            android:id="@+id/collection"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/address"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:text="Collection/Delivery :1"
+                            android:drawablePadding="@dimen/dp_4"
+                            android:textColor="#000000"
+                            android:textSize="12dp" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/item_desc_number_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/collection"
+                            android:layout_marginHorizontal="40dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/orange_solid_button">
+
+                            <TextView
+                                android:id="@+id/itemQuantity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="10dp"
+                                android:padding="5dp"
+                                android:text="2 Pc"
+                                android:textColor="#ffffff" />
+
+                            <TextView
+                                android:id="@+id/itemPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="10dp"
+                                android:padding="5dp"
+                                android:text="R 1"
+                                android:textColor="#ffffff" />
+
+
+                        </RelativeLayout>
+
+                        <RatingBar
+                            android:id="@+id/rating_bar_discover_nested_recycler_item"
+                            style="@style/Widget.AppCompat.RatingBar.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/item_desc_number_price"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginVertical="10dp"
+                            android:isIndicator="true"
+                            android:rating="5" />
+
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="35dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:text="Description"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/itemDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:text="This is android layout version of lorem ipsum. Proin gravida nibh vel velit auctor aliquet"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="8dp"
+                        android:background="@color/app_gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans"
+                            android:text="Quantity Available:"
+                            android:textColor="#000000"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/textAvailable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/open_sans"
+                            android:text="8 pcs"
+                            android:textColor="@color/blue"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="8dp"
+                        android:background="@color/app_gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans"
+                            android:text="Quantity Per Item:"
+                            android:textColor="#000000"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/textPerItem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/open_sans"
+                            android:text="2 pcs"
+                            android:textColor="@color/blue"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="8dp"
+                        android:background="@color/app_gray" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:text="List of Ingredients"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/itemIngredient"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:text="This is android layout version of lorem ipsum. Proin gravida nibh vel velit auctor aliquet"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+
+
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="8dp"
+                        android:background="@color/app_gray" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:text="Source of Meat Products"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/itemMeal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:text="Murga Desi, burri majhh, suar,"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+
+
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="8dp"
+                        android:background="@color/app_gray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:text="@string/preparation"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/itemPreparation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:text="This is android layout version of lorem ipsum. Proin gravida nibh vel velit auctor aliquet"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+
+
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="8dp"
+                        android:background="@color/app_gray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:text="Allergies"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/itemAllergies"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:fontFamily="@font/open_sans"
+                        android:text="This is android layout version of lorem ipsum. Proin gravida nibh vel velit auctor aliquet"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="8dp"
+                        android:background="@color/app_gray" />
+
+
+                    <TextView
+                        android:id="@+id/quantity_text_item_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Quantity"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp">
+
+                        <Button
+                            android:id="@+id/item_desc_increment"
+                            android:layout_width="60dp"
+                            android:layout_height="45dp"
+                            android:layout_toRightOf="@id/item_desc_quantity"
+                            android:background="@drawable/orange_stroke_button"
+                            android:text="+"
+                            android:textColor="@color/orange"
+                            android:textSize="28dp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/item_desc_quantity"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:layout_toRightOf="@+id/item_desc_decrement"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:text="1"
+                            android:textColor="@color/orange"
+                            android:textSize="24dp"
+
+                            />
+
+
+                        <Button
+                            android:id="@+id/item_desc_decrement"
+                            android:layout_width="60dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/orange_stroke_button"
+                            android:gravity="center"
+                            android:text="-"
+                            android:textColor="@color/orange"
+                            android:textSize="28dp"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/choose_address_btn_item_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginVertical="20dp"
+                        android:background="@drawable/orange_solid_button"
+                        android:paddingHorizontal="60dp"
+                        android:text="Choose Address"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

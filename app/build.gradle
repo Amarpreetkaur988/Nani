@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.omninos.nani"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.cepheuen.elegant-number-button:lib:1.0.2'
+
+    //spinkit animation
+    implementation 'com.github.ybq:Android-SpinKit:1.2.0'
+
+    //circle image view
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
+
+    //AndroidViewModel
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+    implementation "android.arch.lifecycle:viewmodel:1.1.1"
+
+    //country code
+    implementation 'com.hbb20:ccp:2.2.9'
+
+    // top snack bar
+    implementation 'com.androidadvance:topsnackbar:1.1.1'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+
+
+    //firebase
+    implementation 'com.google.firebase:firebase-messaging:20.0.1'
+    //fb login
+    implementation 'com.facebook.android:facebook-login:5.9.0'
+    //map
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
+
+    //gogle login
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    //Image setup
+    api 'com.theartofdev.edmodo:android-image-cropper:2.8.+'
+    implementation 'com.jsibbold:zoomage:1.1.0'
+
+    implementation 'com.github.manjhi:Cache_Database:97f58a62f0'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'

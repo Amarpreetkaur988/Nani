@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.navigation.NavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="@dimen/dp_230"
+    android:layout_gravity="start"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/navigation_home_background" />
+
+        <View
+            android:id="@+id/viewImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/nav_pic"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="@dimen/dp_1"
+            android:src="@drawable/ic_user" />
+
+        <TextView
+            android:id="@+id/nav_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nav_pic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/open_sans"
+            android:text="@string/amandeep_mall"
+            android:textColor="@color/white" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/nav_name"
+            android:layout_marginTop="30dp"
+            android:background="@color/app_gray" />
+
+        <TextView
+            android:id="@+id/home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view1"
+            android:drawableLeft="@drawable/home"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/open_sans"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/home"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/home"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="60dp"
+            android:background="@color/app_gray" />
+
+        <TextView
+            android:id="@+id/my_orders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view2"
+            android:drawableLeft="@drawable/order"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/open_sans"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
+            android:paddingBottom="10dp"
+            android:text="@string/my_orders"
+            android:textColor="@color/white" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/my_orders"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="60dp"
+            android:background="@color/app_gray" />
+
+        <TextView
+            android:id="@+id/switch_sides"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view3"
+            android:drawableLeft="@drawable/ic_switch_sides"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/open_sans"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
+            android:paddingBottom="10dp"
+            android:text="Switch to Nani"
+            android:textColor="@color/white" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/switch_sides"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="60dp"
+            android:background="@color/app_gray" />
+
+
+    </RelativeLayout>
+
+</com.google.android.material.navigation.NavigationView>

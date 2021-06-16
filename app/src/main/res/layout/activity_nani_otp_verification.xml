@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.naniActivity.NaniOtpVerification">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/logo_otp_verification"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:src="@drawable/logo_splash" />
+
+            <TextView
+                android:id="@+id/a_verification_code_text_otp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo_otp_verification"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/a_verification_code"
+                android:textColor="#000" />
+
+            <RelativeLayout
+                android:id="@+id/number_layout_otp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/a_verification_code_text_otp"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/phone_number_text_otp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/phone_number_otp"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/numberTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/phone_number_text_otp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/_91_99999_88888"
+                    android:textColor="@color/blue" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/please_enter_text_otp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/number_layout_otp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/please_enter_text_otp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/enter_code_otp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/please_enter_text_otp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_30"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/enter_the_verification_code"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/otp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/enter_code_otp"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/dp_45"
+                    android:layout_height="@dimen/dp_45"
+                    android:layout_margin="@dimen/dp_10"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="@dimen/dp_8">
+
+                    <EditText
+                        android:id="@+id/otp1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/open_sans"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:singleLine="true"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/dp_45"
+                    android:layout_height="@dimen/dp_45"
+                    android:layout_margin="@dimen/dp_10"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="@dimen/dp_8">
+
+                    <EditText
+                        android:id="@+id/otp2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/open_sans"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:singleLine="true"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/dp_45"
+                    android:layout_height="@dimen/dp_45"
+                    android:layout_margin="@dimen/dp_10"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="@dimen/dp_8">
+
+                    <EditText
+                        android:id="@+id/otp3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/open_sans"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:singleLine="true"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/dp_45"
+                    android:layout_height="@dimen/dp_45"
+                    android:layout_margin="@dimen/dp_10"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="@dimen/dp_8">
+
+                    <EditText
+                        android:id="@+id/otp4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/open_sans"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:singleLine="true"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <Button
+                android:backgroundTint="@color/blue"
+                android:id="@+id/verify_button_otp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/otp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/orange_solid_button"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/verify"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/resendOtp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/verify_button_otp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/resend_code"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

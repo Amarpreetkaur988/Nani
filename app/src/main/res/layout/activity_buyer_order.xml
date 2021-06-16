@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.userActivity.BuyerOrderActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/app_bar_edit_profile"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/orange">
+
+        <ImageView
+            android:id="@+id/appbar_transparent_image1"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            android:src="@drawable/back_black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="My Orders"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:id="@+id/title_app_bar_transparent"
+            android:gravity="center"
+            android:layout_toRightOf="@id/appbar_transparent_image1"
+            android:fontFamily="@font/open_sans"
+            android:layout_marginRight="?attr/actionBarSize" />
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/app_bar_edit_profile"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
